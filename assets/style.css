@@ -5,10 +5,15 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style-type: none;
-  }
-  
+}
 
 #form-pokemon {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
