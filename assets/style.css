@@ -6,14 +6,15 @@
     text-decoration: none;
     list-style-type: none;
 }
-
-#form-pokemon {
-    height: 100vh;
-    width: 100vw;
+body {
     background-image: url(./img/wallpaper.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+}
 
+#form-pokemon {
+    margin: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +22,7 @@
     gap: 40px;
 }
 #poke-search {
+    padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,6 +34,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: rgb(0, 255, 136);
 }
 
 .pokemon-card {
@@ -42,5 +51,5 @@
     gap: 20px;
 }
 .pokemon-card img {
-    width: 30%;
+    width: 50%;
 }
