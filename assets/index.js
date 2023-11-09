@@ -33,14 +33,21 @@ const renderPokemonCard = (pokemonData) => {
     const { name, id, height, weight, types, sprites} = pokemonData;
 
     const cardHTML = `
-    <div class="pokemon-card">
-        <h2>${name}</h2>
+    <div>
+    <h2>${name}</h2>
+</div>
+<div class="poke-data">
+    <div class="poke-img">
+        
         <img src="${sprites.other.home.front_default}"alt="${name}">
+    </div>
+    <div class="poke-info">
         <p>ID: ${id}</p>
-        <p>Altura: ${height}</p>
-        <p>Peso: ${weight}</p>
+        <p>Altura: ${height/10} Mts</p>
+        <p>Peso: ${weight/10} Kgr </p>
         <p>Tipo(s): ${types.map(type => type.type.name).join(', ')}</p>
     </div>
+</div>   
 `;
 
 pokeCard.innerHTML = cardHTML;

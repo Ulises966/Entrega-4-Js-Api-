@@ -9,7 +9,7 @@
 body {
     background-image: url(./img/wallpaper.jpg);
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -21,6 +21,10 @@ body {
     flex-direction: column;
     gap: 40px;
 }
+#form-pokemon h1 {
+    font-size: 40px;
+    color: aquamarine;
+}
 #poke-search {
     padding: 30px;
     display: flex;
@@ -28,19 +32,35 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#input {
+    width: 150px;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(205, 255, 148);
+    color: black;
+}
+#btn {
+    
 }
 #poke-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 20px;
     backdrop-filter: blur(2px) saturate(180%);
     -webkit-backdrop-filter: blur(2px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.5);
+    background-color: rgba(17, 25, 40, 0.678);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-    color: rgb(0, 255, 136);
+    color: aliceblue;
 }
 
 .pokemon-card {
@@ -50,6 +70,38 @@ body {
     align-items: center;
     gap: 20px;
 }
-.pokemon-card img {
-    width: 50%;
+#poke-card h2 {
+    font-size: 30px;
+}
+.poke-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.poke-img img {
+    width: 200px;
+}
+.poke-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    padding: 20px;
+}
+.poke-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.poke-info p {
+    font-size: 18px;
+    color: beige;
 }
